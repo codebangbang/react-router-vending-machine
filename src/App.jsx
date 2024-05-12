@@ -1,15 +1,27 @@
-import { useState } from 'react'
-import VendingMachine from './VendingMachine'
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import VendingMachine from './VendingMachine' 
+import Pop from './Pop'
+import Chips from './Chips'
+import Candy from './Candy'
+import Navbar from './Navbar'
 import './App.css'
 
-function App() {
-  
 
+function App() {
   return (
-    <>
-     <h1>Welcome</h1>
-    </>
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<VendingMachine/>} />
+          <Route path="/pop" element={<Pop/>} />
+          <Route path="/chips" element={<Chips/>} />
+          <Route path="/candy" element={<Candy/>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
-export default App
+export default App;
