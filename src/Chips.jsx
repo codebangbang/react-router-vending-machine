@@ -3,10 +3,11 @@ import Reach from 'react';
 function Chips() {
     return (
         <div className="Chips">
-            <h1>HELLO I AM A CHIPS. WHAT WOULD YOU LIKE TO EAT?</h1>
-            <img src="https://media.giphy.com/media/3o7TKz6r1wDlUdGn7W/giphy.gif" alt="Chips" />
+            <h1>Looking for something crunchy, huh?  Grab a bag and enjoy!</h1>
+            <img src="src/assets/images/potato-chip-bags-display-supermarket-lays-chips-stacked-together-aisle-winco-arizona-138073807.webp" alt="Chips" />
         </div>
     )
 }
+
 
 export default Chips;
